@@ -5,7 +5,10 @@ public class Main {
         //Shape shape = new Shape();
         //shape.playSound();
 
-        Triangle triangle = new Triangle(25);
+        //this is static so can go before (when not static it had to go after triangle object created)
+        Triangle.Colour colour = new Triangle.Colour();
+
+        Triangle triangle = new Triangle(25,"");
         triangle.playSound();
 
         Amoeba amoeba = new Amoeba();
